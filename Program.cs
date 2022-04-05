@@ -15,6 +15,8 @@ namespace CalculadoraIMC
             Console.WriteLine("Qual o seu peso em kg? Ex.: 70,3");
             float peso = Convert.ToSingle(Console.ReadLine());
 
+            
+
             double imc = Math.Round(peso / (altura * altura), 2);
 
             Console.WriteLine("{0}, sua altura é {1}m e seu peso, {2}kg.", nome, altura, peso);
