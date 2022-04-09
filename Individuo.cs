@@ -52,14 +52,18 @@ public class Individuo
         if (Imc < 18.5) 
         {
             peso = 18.5 * Altura * Altura;
-            aux = peso - Peso;
+            aux = Math.Round((peso - Peso), 2);
             return $"precisa ganhar {aux}kg";
         }
         else if (Imc > 24.99)
         {
             peso = 24.99 * Altura * Altura;
-            aux = Peso - peso;
+            aux = Math.Round((Peso - peso), 2);
             return $"precisa perder {aux}kg";
+        }
+        else
+        {
+            return $"está com o peso normal e ideal.";
         }
     }
 }

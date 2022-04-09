@@ -23,7 +23,7 @@ namespace CalculadoraIMC
             Individuo i1 = new Individuo(Nome, Altura, Peso);
 
             Console.WriteLine("Você está " + i1.FaixaPeso());
-            Console.WriteLine("Você " + i1.Situacao);
+            Console.WriteLine("Você " + i1.Situacao());
         }
     }
 }
