@@ -3,13 +3,13 @@ public class Individuo
     public string Nome { get; set; }
     public double Altura { get; set; }
     public double Peso { get; set; }
-    public double Imc { get => Peso / (Altura * Altura); }
+    public double Imc { get => Math.Round(Peso / (Altura * Altura), 2); }
 
     public Individuo (string nome, double altura, double _peso)
     {
         Nome = nome;
-        Altura = altura;
-        Peso = _peso;
+        Altura = Math.Round(altura, 2);
+        Peso = Math.Round(_peso);
     }
     
     public string FaixaPeso() 
